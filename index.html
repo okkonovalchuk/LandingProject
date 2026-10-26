@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Назва сайту</title>
+    <!-- Підключення стилів CSS буде тут -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Шапка сайту -->
+ <header class="site-header">
+    <div class="nav-bar">
+        <!-- Логотип -->
+        <a href="index.html" class="logo">
+            <div class="logo-icon-wrapper">
+                <span class="orange-circle"></span>
+                <!-- Деталізована іконка фотоапарата -->
+                <svg class="camera-icon" width="38" height="28" viewBox="0 0 38 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2" y="6" width="34" height="20" rx="3" fill="#3D291F" stroke="#231711" stroke-width="1.5"/>
+                    <rect x="12" y="2" width="14" height="5" rx="1.5" fill="#3D291F" stroke="#231711" stroke-width="1.5"/>
+                    <rect x="5" y="9" width="6" height="3" rx="1" fill="#CBB69D"/>
+                    <circle cx="19" cy="16" r="7.5" fill="#231711" stroke="#CBB69D" stroke-width="1.5"/>
+                    <circle cx="19" cy="16" r="4.5" fill="#CBB69D"/>
+                    <circle cx="19" cy="16" r="2.5" fill="#231711"/>
+                    <circle cx="30" cy="10" r="1.5" fill="#E28641"/>
+                </svg>
+            </div>
+            <span class="logo-text">Photo<span class="logo-highlight">App</span></span>
+        </a>
+
+        <!-- Навігація -->
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">PhotoApp</a></li>
+                <li><a href="design.html" class="nav-link">Design</a></li>
+            </ul>
+            <div class="nav-divider"></div>
+            <a href="#download" class="btn-download">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                <span>Download</span>
+            </a>
+        </nav>
+    </div>
+</header>
+
+    <!-- Основний контент -->
+    <main>
+    <!-- Секція після шапки (Hero Section) -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <!-- Спланований слоган -->
+            <span class="hero-badge">✦ Aesthetic Photo Editor</span>
+            <h1 class="hero-title">Create magic in<br><span class="highlight-text">every frame</span></h1>
+            <p class="hero-description">
+                Перетворіть ваші щоденні знімки на вічні витвори мистецтва за допомогою наших теплих вінтажних фільтрів та естетичних інструментів редагування.
+            </p>
+            <div class="hero-buttons">
+                <a href="#download" class="btn-hero-primary">Спробувати безкоштовно</a>
+                <a href="about.html" class="btn-hero-secondary">Дізнатися більше</a>
+            </div>
+        </div>
+
+        <!-- Візуальний блок з естетичною вінтажною фотографією -->
+        <div class="hero-image-wrapper">
+            <div class="photo-frame">
+                <img src="photo_main.png" alt="Моє фото" class="hero-photo">
+<svg class="tag-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12 2L14.4 9.6L22 12L14.4 14.4L12 22L9.6 14.4L2 12L9.6 9.6L12 2Z" fill="url(#star_grad1)"/>
+    <path d="M18 15L19.2 18L22 19.2L19.2 20.4L18 23.2L16.8 20.4L14 19.2L16.8 18L18 15Z" fill="url(#star_grad2)"/>
+    <defs>
+        <linearGradient id="star_grad1" x1="2" y1="2" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#ffb74d"/>
+            <stop offset="1" stop-color="#f26430"/>
+        </linearGradient>
+        <linearGradient id="star_grad2" x1="14" y1="15" x2="22" y2="23.2" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#ffd54f"/>
+            <stop offset="1" stop-color="#ff8a65"/>
+        </linearGradient>
+    </defs>
+</svg>
+                    <span class="tag-text">Vintage Warmth Filter</span>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+    <!-- Підвал сайту -->
+<footer class="site-footer">
+    <div class="footer-container">
+        <!-- Стовпчик 1: Інформація про сайт (5 рядків) -->
+        <div class="footer-col">
+            <h3 class="footer-heading">PhotoApp</h3>
+            <ul class="footer-list">
+                <li><a href="#home">Про нашу платформу</a></li>
+                <li><a href="#features">Естетичні фільтри</a></li>
+                <li><a href="#design">Дизайн та пресети</a></li>
+                <li><a href="#download">Мобільний додаток</a></li>
+                <li><a href="#blog">Історії та натхнення</a></li>
+            </ul>
+        </div>
+
+        <!-- Стовпчик 2: Контакти та карта сайту (5 рядків) -->
+        <div class="footer-col">
+            <h3 class="footer-heading">Контакти & Навігація</h3>
+            <ul class="footer-list">
+                <li>Email: support@photoapp.com</li>
+                <li>Телефон: +38 (099) 123-45-67</li>
+                <li>Адреса: вул. Мистецька, 12, Київ</li>
+                <li><a href="#sitemap">Карта сайту</a></li>
+                <li><a href="#privacy">Політика конфіденційності</a></li>
+            </ul>
+        </div>
+
+<!-- Стовпчик 3: Інтерактивна мапа в стилі сайту -->
+<div class="footer-col">
+    <h3 class="footer-heading">Ми на мапі</h3>
+    <a href="https://maps.google.com" target="_blank" class="map-card-link">
+        <div class="map-wrapper">
+            <!-- Стилізоване зображення мапи у вінтажних тонах -->
+            <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?q=80&w=800&auto=format&fit=crop" alt="Vintage Map" class="map-image">
+            
+            <!-- Живий анімований маркер -->
+            <div class="map-pin">
+                <svg width="28" height="34" viewBox="0 0 24 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 0C5.37 0 0 5.37 0 12C0 21 12 30 12 30C12 30 24 21 24 12C24 5.37 18.63 0 12 0ZM12 16C9.79 16 8 14.21 8 12C8 9.79 9.79 8 12 8C14.21 8 16 9.79 16 12C16 14.21 14.21 16 12 16Z" fill="#c8531b"/>
+                </svg>
+            </div>
+
+            <!-- Стилізована кнопка "Відкрити карту" -->
+            <div class="map-badge">
+                <span class="map-badge-text">Карти</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+            </div>
+        </div>
+    </a>
+</div>
+</div>
+
+    <!-- Нижній копірайт -->
+    <div class="footer-bottom">
+        <p>© 2026 PhotoApp. Create magic in every frame. Усі права захищено.</p>
+    </div>
+</footer>
+
+</body>
+</html>

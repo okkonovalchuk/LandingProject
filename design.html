@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дизайн та пресети — PhotoApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Шапка сайту -->
+    <header class="site-header">
+        <nav class="nav-bar">
+            <a href="index.html" class="logo">
+                <div class="logo-icon-wrapper">
+                    <div class="orange-circle"></div>
+                    <svg class="camera-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2b1d16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                        <circle cx="12" cy="13" r="4"></circle>
+                    </svg>
+                </div>
+                <span class="logo-text">Photo<span class="logo-highlight">App</span></span>
+            </a>
+            
+            <div class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">PhotoApp</a></li>
+                    <li><a href="design.html" class="nav-link" style="color: #c8531b; font-weight: 600;">Design</a></li>
+                </ul>
+                <div class="nav-divider"></div>
+                <a href="index.html" class="btn-download">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                    Download
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Головна секція сторінки Дизайну -->
+    <main class="hero-section" style="grid-template-columns: 1fr; text-align: center; max-width: 800px; margin-top: 40px;">
+        <div class="hero-content" style="align-items: center;">
+            <div class="hero-badge">
+                ✦ Visual Presets & Aesthetics
+            </div>
+            <h1 class="hero-title" style="font-size: 40px; margin-top: 15px;">
+                Колекція <span class="highlight-text">вінтажних стилів</span>
+            </h1>
+            <p class="hero-description" style="max-width: 650px; text-align: center; margin-bottom: 40px;">
+                Обирайте атмосферу для ваших знімків. Кожен пресет створений на основі унікальних налаштувань зернистості, світлотіні та ретро-палітри.
+            </p>
+        </div>
+    </main>
+
+    <!-- Каталог пресетів (інтерактивні картки) -->
+    <section style="max-width: 1100px; margin: 20px auto 60px auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px;">
+        <div class="feature-card">
+            <div style="font-size: 28px; margin-bottom: 15px;">🎞️</div>
+            <h3 style="font-family: 'Playfair Display', serif; font-size: 20px; color: #2b1d16; margin-bottom: 12px;">Kodak Nostalgia 70s</h3>
+            <p style="font-size: 14px; color: #5a483e; line-height: 1.6;">Теплі жовто-коричневі відтінки, м'які тіні та легке плівкове зерно для сімейних та портретних кадрів.</p>
+        </div>
+        <div class="feature-card">
+            <div style="font-size: 28px; margin-bottom: 15px;">📸</div>
+            <h3 style="font-family: 'Playfair Display', serif; font-size: 20px; color: #2b1d16; margin-bottom: 12px;">Polaroid Instant</h3>
+            <p style="font-size: 14px; color: #5a483e; line-height: 1.6;">Характерні вицвілі краї, пастельні акценти та атмосфера миттєвих знімків минулого століття.</p>
+        </div>
+        <div class="feature-card">
+            <div style="font-size: 28px; margin-bottom: 15px;">✨</div>
+            <h3 style="font-family: 'Playfair Display', serif; font-size: 20px; color: #2b1d16; margin-bottom: 12px;">Cinematic Warm</h3>
+            <p style="font-size: 14px; color: #5a483e; line-height: 1.6;">Глибокий контраст та золотисте сяйво лампового світла для магічних нічних та пейзажних фото.</p>
+        </div>
+    </section>
+    <!-- Секція налаштувань пресетів (Анатомія стилю) -->
+    <section style="max-width: 1100px; margin: 0 auto 60px auto; background-color: #ebdcd0; border: 1px solid #d8c3b2; border-radius: 24px; padding: 40px; box-shadow: 0 10px 25px rgba(60, 40, 20, 0.05);">
+        <div style="text-align: center; margin-bottom: 30px;">
+            <h3 style="font-family: 'Playfair Display', serif; font-size: 26px; color: #2b1d16; margin-bottom: 8px;">Анатомія ретро-пресету</h3>
+            <p style="font-size: 14px; color: #5a483e;">З чого складається магія нашої плівкової обробки</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;">
+            <div>
+                <div style="display: flex; justify-content: space-between; font-size: 14px; color: #2b1d16; font-weight: 600; margin-bottom: 8px;">
+                    <span>Плівкове зерно (Grain)</span>
+                    <span style="color: #c8531b;">85%</span>
+                </div>
+                <div style="background-color: #dfcebf; height: 8px; border-radius: 4px; overflow: hidden;">
+                    <div style="background-color: #c8531b; width: 85%; height: 100%; border-radius: 4px;"></div>
+                </div>
+            </div>
+
+            <div>
+                <div style="display: flex; justify-content: space-between; font-size: 14px; color: #2b1d16; font-weight: 600; margin-bottom: 8px;">
+                    <span>Тепле світло (Warmth)</span>
+                    <span style="color: #c8531b;">92%</span>
+                </div>
+                <div style="background-color: #dfcebf; height: 8px; border-radius: 4px; overflow: hidden;">
+                    <div style="background-color: #c8531b; width: 92%; height: 100%; border-radius: 4px;"></div>
+                </div>
+            </div>
+
+            <div>
+                <div style="display: flex; justify-content: space-between; font-size: 14px; color: #2b1d16; font-weight: 600; margin-bottom: 8px;">
+                    <span>Ретро-контраст (Fade)</span>
+                    <span style="color: #c8531b;">78%</span>
+                </div>
+                <div style="background-color: #dfcebf; height: 8px; border-radius: 4px; overflow: hidden;">
+                    <div style="background-color: #c8531b; width: 78%; height: 100%; border-radius: 4px;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер сайту -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div>
+                <h3 class="footer-heading">PhotoApp</h3>
+                <ul class="footer-list">
+                    <li><a href="about.html">Про нашу платформу</a></li>
+                    <li><a href="#">Естетичні фільтри</a></li>
+                    <li><a href="design.html">Дизайн та пресети</a></li>
+                    <li><a href="#">Мобільний додаток</a></li>
+                    <li><a href="#">Історія та натхнення</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="footer-heading">Контакти & Навігація</h3>
+                <ul class="footer-list">
+                    <li>Email: support@photoapp.com</li>
+                    <li>Телефон: +38 (099) 123-45-67</li>
+                    <li>Адреса: вул. Мистецька, 12, Київ</li>
+                    <li><a href="#">Карта сайту</a></li>
+                    <li><a href="#">Політика конфіденційності</a></li>
+                </ul>
+            </div>
+<div class="footer-col">
+    <h3 class="footer-heading">Ми на мапі</h3>
+    <a href="https://maps.google.com" target="_blank" class="map-card-link">
+        <div class="map-wrapper">
+            <!-- Стилізоване зображення мапи у вінтажних тонах -->
+            <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?q=80&w=800&auto=format&fit=crop" alt="Vintage Map" class="map-image">
+            
+            <!-- Живий анімований маркер -->
+            <div class="map-pin">
+                <svg width="28" height="34" viewBox="0 0 24 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 0C5.37 0 0 5.37 0 12C0 21 12 30 12 30C12 30 24 21 24 12C24 5.37 18.63 0 12 0ZM12 16C9.79 16 8 14.21 8 12C8 9.79 9.79 8 12 8C14.21 8 16 9.79 16 12C16 14.21 14.21 16 12 16Z" fill="#c8531b"/>
+                </svg>
+            </div>
+
+            <!-- Стилізована кнопка "Відкрити карту" -->
+            <div class="map-badge">
+                <span class="map-badge-text">Карти</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+            </div>
+        </div>
+    </a>
+</div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 PhotoApp. Create magic in every frame. Усі права захищено.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
